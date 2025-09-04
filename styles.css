@@ -97,6 +97,11 @@
 /* ---------------------------------------------------- */
 /* APLICACIÓN DE ESTILOS DE FUENTE EN TU CÓDIGO (basado en la revisión anterior) */
 /* ---------------------------------------------------- */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 body {
    font-size: 1rem;
@@ -737,6 +742,7 @@ p {
     max-width: 800px;
   }
 }
+
 
 
 
