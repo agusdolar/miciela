@@ -1,0 +1,697 @@
+/* Norsy Regular (la que ya tenías) */
+@font-face {
+  font-family: 'Norsy';
+  src: url('font/norsy-regular.otf') format('opentype');
+  font-weight: normal; /* 400 */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Norsy Condensed Semibold (la que ya tenías) */
+@font-face {
+  font-family: 'Norsy';
+  src: url('font/norsy-condensedsemibold.otf') format('opentype');
+  font-weight: 600; /* semibold */
+  font-style: normal;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
+/* Norsy BOLD (¡NUEVA DECLARACIÓN!) */
+@font-face {
+  font-family: 'Norsy'; /* ¡Es el mismo nombre de familia! */
+  src: url('font/norsy-bold.otf') format('opentype'); /* <-- ¡Asegúrate que este es el nombre EXACTO del archivo! */
+  font-weight: 700; /* ESTE ES EL PESO PARA LA VERSIÓN BOLD */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------------------------------------------------- */
+/* MADE INFINITY (sin cambios aquí)                      */
+/* ---------------------------------------------------- */
+/* Made Infinity THIN (¡NUEVA DECLARACIÓN!) */
+@font-face {
+  font-family: 'Made Infinity'; /* Mismo nombre de familia */
+  src: url('fonts/MADEINFINITYPersonalUse-Thin.otf') format('opentype'); /* <-- ¡Asegúrate que este es el nombre EXACTO del archivo! */
+  font-weight: 100; /* ESTE ES EL PESO PARA LA VERSIÓN THIN */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Made Infinity REGULAR (ahora con su archivo real) */
+@font-face {
+  font-family: 'Made Infinity';
+  src: url('fonts/MADEINFINITYPersonalUse-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Made Infinity MEDIUM (con su archivo real) */
+@font-face {
+  font-family: 'Made Infinity';
+  src: url('fonts/MADEINFINITYPersonalUse-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Made Infinity BLACK (la más gruesa, con su archivo real) */
+@font-face {
+  font-family: 'Made Infinity';
+  src: url('fonts/MADEINFINITYPersonalUse-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM SANS */
+/* DM Sans Regular */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('font/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans Medium */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('font/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans Bold (si la tenés en el zip) */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('font/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ---------------------------------------------------- */
+/* APLICACIÓN DE ESTILOS DE FUENTE EN TU CÓDIGO (basado en la revisión anterior) */
+/* ---------------------------------------------------- */
+
+body {
+   font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'DM Sans';
+  margin: 0;
+  background-color:#131414;
+  color: #131414; /* CHINESE BLACK */
+}
+
+header {
+  color: white;
+  background:#131414;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  /* El 'gap: 20px;' ya lo tienes repetido, solo con uno es suficiente */
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5ede1;
+  font-weight: 300; 
+  font-family: 'Dm Sans';
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ec1763; /* El color de tu 'strong' (azul). Puedes cambiarlo si quieres otro. */
+}
+
+nav ul li:last-child {
+  margin-right: 15px; /* Ajusta este valor si necesitas más espacio */
+}
+
+
+.divlogo img{
+height: 40px;
+width: auto;
+display: block;
+}
+
+/* --- Estilos para los Iconos Sociales --- */
+.social-icons {
+  display: flex; /* Para alinear los iconos de redes sociales horizontalmente */
+  align-items: center;
+  gap: 10px; /* Espacio entre los iconos de redes sociales */
+}
+
+.social-icons a {
+  color: white; /* Color de tus iconos, lo pongo blanco como tu header */
+  font-size: 1.5rem; /* Tamaño de los iconos, ajusta si es necesario */
+  text-decoration: none; /* Asegura que no tengan subrayado */
+  transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Colores específicos para redes sociales al pasar el mouse (opcional) */
+.social-icons a[href*="instagram.com"]:hover {
+  color: #c13584; /* Color de Instagram */
+}
+
+.social-icons a[href*="youtube.com"]:hover {
+  color: #ff0000; /* Color de YouTube */
+}
+
+/* --- NUEVO: Estilos para el Contenedor de Búsqueda (lupa y campo) --- */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 3px 8px; /* Reducido el padding para hacerlo más compacto */
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 3px; /* Reducido el padding interno del input */
+  outline: none;
+  width: 90px; /* Reducido el ancho del campo de texto */
+  font-size: 0.9rem; /* Reducido el tamaño de la letra del input */
+  margin-right: 5px;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* Ajustado el color del placeholder */
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem; /* Reducido el tamaño del icono de la lupa */
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.search-button:hover {
+  color: #007bff; /* Color de Bootstrap azul al pasar el mouse */
+}
+
+
+.nav-right-elements {
+  display: flex; /* Convierte este contenedor en un flex container */
+  align-items: center; /* Centra verticalmente sus elementos internos (ul, social-icons, search-icon) */
+  gap: 30px; /* Espacio entre el menú, los iconos sociales y la lupa */
+  margin: 0;
+  padding: 0;
+}
+
+.seccion {
+  padding: 6em 2em;
+}
+
+
+
+.inicio {
+  position: relative;
+  background-image: url('fotos/Fondo.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #131414;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.inicio-contenido {
+  
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  max-width: 1000px;
+}
+
+.h1inicio {
+  font-family: 'Norsy', sans-serif;
+  font-weight: 700; 
+  display: inline;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #f5ede1;
+}
+
+.h1mision {
+  display: flex;
+  justify-content: center;
+  font-family: 'Made Infinity', sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #f5ede1;
+}
+
+.h2mision {
+  display: flex;
+  justify-content: center;
+  font-family: 'Made Infinity', sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #f5ede1;
+}
+
+/* Opcional: animación */
+.h1mision {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.h2mision {
+  opacity: 0;
+  animation: fadeIn 6s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.inicio p {
+  font-family: 'Made Infinity', sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: #0798f9; /* Azul */
+  text-shadow: 1px 1px 2px rgba(27, 21, 12, 0.8);
+  line-height: 1.6;
+}
+
+.quienes {
+  
+  background-position: center center; 
+  background-repeat: repeat;
+  color: #f5ede1;
+  background-size:100%
+}
+
+.quienes img {
+  border-radius: 15px; /* esquinas suaves */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* sombra elegante */
+  transition: transform 0.3s ease;
+}
+
+.quienes img:hover {
+  transform: scale(1.05); /* zoom suave al pasar */
+}
+
+
+.texto-quienes {
+  column-count: 2;
+  column-gap: 2rem;
+  text-align: justify;
+}
+
+.resaltado {
+  font-weight: bold;
+  color: #ec1763;
+}
+
+.resaltado.azul {
+  color: #0798f9;
+}
+
+.resaltado.amarillo {
+  color: #fedd02;
+}
+
+.resaltado.azul {
+  color: #0798f9;
+}
+
+.multimedia {
+  background-color: #131414; 
+  text-align: center;
+  color: white;
+}
+
+.texto-multimedia {
+  column-count: 2;
+  column-gap: 2rem;
+  text-align: justify;
+}
+
+.equipo-foto {
+  max-width: 800px;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+
+
+/* --- ESTILOS DEL FORMULARIO --- */
+.contacto .form-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500; /* Medium weight */
+  color: #f5ede1; /* Color claro para los labels */
+  margin-bottom: .25rem; /* Ajusta el espacio entre label y input */
+}
+
+.contacto .form-control {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo del input semi-transparente */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+  color: #f5ede1; /* Texto del input claro */
+  border-radius: .5rem; /* Esquinas más suaves */
+}
+
+.contacto .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Placeholder más tenue */
+}
+
+.contacto .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ec1763; /* Borde del focus con tu color Ruby */
+  box-shadow: 0 0 0 0.25rem rgba(236, 23, 99, 0.25); /* Sombra de focus Ruby */
+  color: #f5ede1;
+}
+
+/* --- ESTILOS PARA EL BOTÓN NUBE --- */
+.btn-nube {
+  background: none; /* Sin fondo, la imagen será el "fondo" */
+  border: none; /* Sin borde */
+  padding: 0; /* Sin padding, la imagen define el tamaño */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block; /* Para que el transform funcione correctamente */
+}
+
+.nube-icon {
+  width: 150px; /* Tamaño de la nube, ajusta según sea necesario */
+  height: auto;
+  display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+.btn-nube:hover {
+  transform: scale(1.05); /* Un pequeño zoom al pasar el mouse */
+}
+
+
+/* --- ESTILOS GENERALES DE LA SECCIÓN CONTACTO --- */
+.contacto {
+  background-color: #131414;
+  color: #f5ede1;
+}
+
+.contacto h2, .contacto h3 {
+  color: #f5ede1;
+  font-family: 'Norsy', sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.contacto p.lead {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+/* --- ESTILOS DEL FORMULARIO --- */
+.contacto .form-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: #f5ede1;
+  margin-bottom: .25rem;
+}
+
+.contacto .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f5ede1;
+  border-radius: .5rem;
+}
+
+.contacto .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contacto .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ec1763;
+  box-shadow: 0 0 0 0.25rem rgba(236, 23, 99, 0.25);
+  color: #f5ede1;
+}
+
+/* --- ESTILOS PARA EL BOTÓN NUBE --- */
+.btn-nube {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.nube-icon {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.btn-nube:hover {
+  transform: scale(1.05);
+}
+
+/* --- ESTILOS PARA ICONOS SOCIALES EN CONTACTO --- */
+.social-icons-contact {
+    margin-top: 1.5rem;
+}
+
+.social-icons-contact a {
+    color: #f5e6e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.social-icons-contact a[href*="instagram.com"]:hover {
+    color: #c13584; /* Color de Instagram */
+}
+
+.social-icons-contact a[href*="youtube.com"]:hover {
+    color: #ff0000; /* Color de YouTube */
+}
+
+.social-icons-contact .icono-grande {
+    font-size: 3rem;
+}
+
+/* Media Queries para ajustar tamaños en pantallas pequeñas */
+@media (max-width: 768px) {
+  .contacto h2 {
+    font-size: 2.5rem;
+  }
+  .contacto p.lead {
+    font-size: 1.2rem;
+  }
+  .contacto .form-label, .contacto .form-control {
+    font-size: 1rem;
+  }
+  .nube-icon {
+    width: 120px;
+  }
+  .social-icons-contact .icono-grande {
+      font-size: 2.5rem;
+  }
+}
+
+
+footer {
+    background-color: #131414;
+    color: #f5ede1;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.footer-lines {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1.5em auto 0;
+}
+
+.footer-lines div {
+    height: 3px;
+    margin: 2px 0;
+}
+
+.line-ruby {
+    background-color: #ec1763;
+}
+
+.line-blue {
+    background-color: #0798f9;
+}
+
+.line-yellow {
+    background-color: #fedd02;
+}
+
+/* TÍTULOS PRINCIPALES: Norsy Bold */
+h1, h3, .titulo {
+  font-family: 'Norsy', sans-serif;
+  color: #f5ede1;
+  font-weight: 700; /* ¡Cambiado a 700 para usar la Norsy Bold real! */
+  text-shadow: 1px 1px 1px #131414;
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+h2 {
+  font-family: 'Norsy', sans-serif;
+  color: #f5ede1;
+  font-weight: 700; /* ¡Cambiado a 700 para usar la Norsy Bold real! */
+  text-shadow: 1px 1px 1px #131414;
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#inicio p {
+  color: #0798f9;
+  text-shadow: 1px 1px 1px #f4fafa;
+  font-family: 'Made Infinity', sans-serif;
+  font-weight: 100; /* Llama a la versión Black de Made Infinity */
+}
+
+
+/* SUBTÍTULOS: Made Infinity Black */
+h4, .subtitulo {
+  font-family: 'Made Infinity', sans-serif;
+  font-weight: 900; /* Llama a la versión Black de Made Infinity */
+}
+
+/* TEXTO COMÚN: Dm Sans */
+body, p, span, label, input, textarea, li, a {
+  font-family: 'Dm Sans', sans-serif;
+  font-weight: 400; 
+  color: #f5ede1;
+  line-height: 1.6;
+  font-size: 1.425rem;
+}
+
+
+
+.descripcion {
+  font-family: 'Dm Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #f5ede1;
+  line-height: 1.6;
+}
+
+hr.my-fancy-line {
+  border: none;
+  border-bottom: 3px dashed #ec1763; /* Una línea punteada de tu color RUBY */
+  margin: 30px 0;
+  width: 60%;
+}
+
+strong{
+  color: #0798f9;
+  text-shadow: 1px 1px 1px #f5ede1;
+}
+
+p {
+  font-family: 'Dm Sans', sans-serif;
+  font-weight: 300;
+  color: #f5ede1;
+}
+
+.prueba {
+  background-color: #131414;
+}
+
+
+/* --- MEDIA QUERIES PARA PANTALLAS MÁS PEQUEÑAS (Móvil) --- */
+@media (max-width: 768px) {
+
+    /* Encabezado y Navegación */
+    .nav-right-elements {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    /* Títulos y Fuentes */
+    .h1inicio {
+        font-size: 2rem;
+    }
+    h2, .titulo {
+        font-size: 2rem;
+    }
+    .contacto h2, .contacto h3 {
+        font-size: 2rem;
+    }
+    body p, .contacto p.lead {
+        font-size: 1rem;
+    }
+
+    /* Secciones */
+    .seccion {
+        padding: 4em 1em; /* Menos espacio en pantallas pequeñas */
+    }
+
+    /* Secciones de texto en dos columnas */
+    .texto-quienes, .texto-multimedia {
+        column-count: 1; /* ¡Ahora el texto se ve en una sola columna! */
+        column-gap: 0;
+        text-align: left;
+    }
+
+    /* Iconos sociales en el header */
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+
+    /* Formulario de contacto */
+    .contacto .form-label, .contacto .form-control {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.9rem;
+    }
+}
