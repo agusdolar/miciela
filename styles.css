@@ -339,7 +339,7 @@ display: block;
 
 
 .resaltado {
-  font-weight: bold;
+  
   color: #ec1763;
 }
 
@@ -750,7 +750,14 @@ p {
   column-gap: 2rem;
   text-align: justify;
 }
+
+  .resaltado {
+        font-weight: bold;
+    }
+
+  
 }
+
 
 
 
