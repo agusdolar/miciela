@@ -637,21 +637,27 @@ p {
 
 
 /* --- MEDIA QUERIES PARA PANTALLAS MÁS PEQUEÑAS (Móvil) --- */
+/* --- MEDIA QUERIES PARA PANTALLAS MÁS PEQUEÑAS (Móvil) --- */
 @media (max-width: 768px) {
 
     /* Encabezado y Navegación */
     .nav-right-elements {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 20px;
     }
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         align-items: center;
+        padding: 0;
+        margin: 0;
     }
-    nav ul li:last-child {
-        margin-right: 0;
+    nav ul a {
+        font-size: 1rem; /* Ajusta el tamaño de la letra de la navegación */
+    }
+    .social-icons {
+      padding-top: 15px;
     }
 
     /* Títulos y Fuentes */
@@ -670,12 +676,12 @@ p {
 
     /* Secciones */
     .seccion {
-        padding: 4em 1em; /* Menos espacio en pantallas pequeñas */
+        padding: 4em 1em;
     }
 
     /* Secciones de texto en dos columnas */
     .texto-quienes, .texto-multimedia {
-        column-count: 1; /* ¡Ahora el texto se ve en una sola columna! */
+        column-count: 1;
         column-gap: 0;
         text-align: left;
     }
