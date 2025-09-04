@@ -632,8 +632,8 @@ p {
 
     /* Regla para la imagen de fondo */
     .inicio {
-        background-size: 150%; 
-        background-position: center top;
+        background-size: auto 150%; 
+        background-position: center;
     }
 
     /* Regla para todas las imágenes */
@@ -731,6 +731,7 @@ p {
         font-size: 0.9rem;
     }
 }
+
 
 
 
