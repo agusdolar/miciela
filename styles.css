@@ -368,7 +368,7 @@ display: block;
 }
 
 .equipo-foto {
-  max-width: 800px;
+ 
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
@@ -732,6 +732,11 @@ p {
     }
 }
 
+@media (min-width: 769px) {
+  .equipo-foto {
+    max-width: 800px;
+  }
+}
 
 
 
