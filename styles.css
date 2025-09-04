@@ -511,24 +511,6 @@ display: block;
     font-size: 3rem;
 }
 
-/* Media Queries para ajustar tamaños en pantallas pequeñas */
-@media (max-width: 768px) {
-  .contacto h2 {
-    font-size: 2.5rem;
-  }
-  .contacto p.lead {
-    font-size: 1.2rem;
-  }
-  .contacto .form-label, .contacto .form-control {
-    font-size: 1rem;
-  }
-  .nube-icon {
-    width: 120px;
-  }
-  .social-icons-contact .icono-grande {
-      font-size: 2.5rem;
-  }
-}
 
 
 footer {
@@ -639,19 +621,26 @@ p {
 
 /* --- MEDIA QUERIES PARA PANTALLAS MÁS PEQUEÑAS (Móvil) --- */
 /* --- MEDIA QUERIES PARA PANTALLAS MÁS PEQUEÑAS (Móvil) --- */
+/* --- MEDIA QUERIES PARA PANTALLAS MÁS PEQUEÑAS (Móvil) --- */
 @media (max-width: 768px) {
     /* Estilos generales para móviles */
     body {
         font-size: 16px;
         padding: 0 1em;
     }
-    
-    /* ¡Esta es la regla para que las imágenes se adapten! */
+
+    /* Regla para la imagen de fondo */
+    .inicio {
+        background-size: 150%; 
+        background-position: center top;
+    }
+
+    /* Regla para todas las imágenes */
     img {
         max-width: 100%;
         height: auto;
     }
-    
+
     /* Encabezado y Navegación */
     .nav-right-elements {
         flex-direction: column;
@@ -669,17 +658,11 @@ p {
         font-size: 1rem;
     }
     .social-icons {
-      padding-top: 15px;
+        padding-top: 15px;
     }
 
     /* Títulos y Fuentes */
-    .h1inicio {
-        font-size: 2rem;
-    }
-    h2, .titulo {
-        font-size: 2rem;
-    }
-    .contacto h2, .contacto h3 {
+    .h1inicio, h2, .titulo, .contacto h2, .contacto h3 {
         font-size: 2rem;
     }
     body p, .contacto p.lead {
@@ -707,16 +690,16 @@ p {
     .contacto .form-label, .contacto .form-control {
         font-size: 0.9rem;
     }
+    .nube-icon {
+        width: 120px;
+    }
+    .social-icons-contact .icono-grande {
+        font-size: 2.5rem;
+    }
 
     /* Footer */
     footer p {
         font-size: 0.9rem;
-    }
-
-  /* Regla para la imagen de fondo */
-    .inicio {
-      background-size: 150%; /* O el valor que mejor se adapte a tu imagen */
-      background-position: center top;
     }
 }
 
