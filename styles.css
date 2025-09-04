@@ -321,6 +321,7 @@ display: block;
 }
 
 .quienes img {
+  max-width: 150px; /* Esto establece el tamaño máximo para pantallas de escritorio */
   border-radius: 15px; /* esquinas suaves */
   box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* sombra elegante */
   transition: transform 0.3s ease;
@@ -718,4 +719,5 @@ p {
       background-position: center top;
     }
 }
+
 
