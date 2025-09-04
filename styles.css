@@ -711,4 +711,11 @@ p {
     footer p {
         font-size: 0.9rem;
     }
+
+  /* Regla para la imagen de fondo */
+    .inicio {
+      background-size: 150%; /* O el valor que mejor se adapte a tu imagen */
+      background-position: center top;
+    }
 }
+
