@@ -337,11 +337,6 @@ display: block;
 }
 
 
-.texto-quienes {
-  column-count: 2;
-  column-gap: 2rem;
-  text-align: justify;
-}
 
 .resaltado {
   font-weight: bold;
@@ -735,6 +730,10 @@ p {
     footer p {
         font-size: 0.9rem;
     }
+
+     .resaltado {
+        font-size: 1.2rem; /* O el valor que prefieras */
+    }
 }
 
 @media (min-width: 769px) {
@@ -745,7 +744,14 @@ p {
    .quienes img {
     max-width: 150px;
   }
+
+  .texto-quienes {
+  column-count: 2;
+  column-gap: 2rem;
+  text-align: justify;
 }
+}
+
 
 
 
