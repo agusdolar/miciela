@@ -639,7 +639,18 @@ p {
 /* --- MEDIA QUERIES PARA PANTALLAS MÁS PEQUEÑAS (Móvil) --- */
 /* --- MEDIA QUERIES PARA PANTALLAS MÁS PEQUEÑAS (Móvil) --- */
 @media (max-width: 768px) {
-
+    /* Estilos generales para móviles */
+    body {
+        font-size: 16px;
+        padding: 0 1em;
+    }
+    
+    /* ¡Esta es la regla para que las imágenes se adapten! */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
     /* Encabezado y Navegación */
     .nav-right-elements {
         flex-direction: column;
@@ -654,7 +665,7 @@ p {
         margin: 0;
     }
     nav ul a {
-        font-size: 1rem; /* Ajusta el tamaño de la letra de la navegación */
+        font-size: 1rem;
     }
     .social-icons {
       padding-top: 15px;
@@ -686,7 +697,7 @@ p {
         text-align: left;
     }
 
-    /* Iconos sociales en el header */
+    /* Íconos sociales en el header */
     .social-icons a {
         font-size: 1.2rem;
     }
